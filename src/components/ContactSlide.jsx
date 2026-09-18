@@ -27,7 +27,7 @@ const ContactSlide = () => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-center items-center text-center py-4 md:py-0 w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-start sm:justify-center items-center text-center py-4 sm:py-0 w-full max-w-full">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -42,7 +42,7 @@ const ProjectsSlide = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="h-full flex flex-col justify-center py-4 md:py-0 relative w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-start sm:justify-center py-2 sm:py-0 relative w-full max-w-full">
       {/* Header Info */}
       <div className="mb-3 sm:mb-4 max-w-full">
         <div className="inline-block bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-4 py-1.5 rounded-lg uppercase tracking-wider mb-2 shadow-md shadow-[#2DD4BF]/20">

@@ -4,7 +4,7 @@ import { Settings, BarChart2, PieChart, TrendingUp, Cloud, X, ChevronRight, Spar
 
 const HomeSlide = ({ nextSlide }) => {
   return (
-    <div className="h-full flex flex-col justify-center items-center text-center relative py-4 sm:py-6 md:py-0 overflow-hidden w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-start sm:justify-center items-center text-center relative py-4 sm:py-0 w-full max-w-full">
       {/* Floating Graphic Doodles & Decorative Icons */}
       <motion.div
         animate={{ y: [-6, 6, -6] }}

@@ -58,7 +58,7 @@ function App() {
           />
 
           {/* Main Slide Viewport */}
-          <main className="flex-1 relative px-3 sm:px-6 md:px-12 pb-20 sm:pb-16 pt-2 overflow-y-auto sm:overflow-hidden z-10 w-full max-w-full">
+          <main className="flex-1 relative px-3 sm:px-6 md:px-12 pb-24 sm:pb-16 pt-2 overflow-y-auto sm:overflow-hidden z-10 w-full max-w-full">
             <ActiveComponent nextSlide={nextSlide} goToSlide={goToSlide} />
           </main>
 
