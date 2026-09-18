@@ -28,7 +28,7 @@ const SlideControls = ({ currentSlide, nextSlide, prevSlide, totalSlides, goToSl
                 ? 'w-6 bg-[#2DD4BF] shadow-sm shadow-[#2DD4BF]'
                 : 'w-2 bg-white/30 hover:bg-white/60'
             }`}
-            aria-label={`Go to slide ${idx + 1}`}
+            aria-label={`Beralih ke slide ${idx + 1}`}
           />
         ))}
       </div>
@@ -38,14 +38,14 @@ const SlideControls = ({ currentSlide, nextSlide, prevSlide, totalSlides, goToSl
         <button
           onClick={prevSlide}
           className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
-          aria-label="Previous Slide"
+          aria-label="Slide Sebelumnya"
         >
           <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
         <button
           onClick={nextSlide}
           className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
-          aria-label="Next Slide"
+          aria-label="Slide Selanjutnya"
         >
           <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>

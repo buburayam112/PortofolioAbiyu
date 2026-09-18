@@ -5,33 +5,33 @@ import { ExternalLink, X, Sparkles, Activity, HeartPulse, Dna, ZoomIn } from 'lu
 const projects = [
   {
     id: 'wine',
-    title: 'Wine Quality Prediction System',
-    desc: 'Built a machine learning model to predict wine quality based on physicochemical properties, deployed via Streamlit for interactive real-time predictions.',
+    title: 'Sistem Prediksi Kualitas Anggur (Wine)',
+    desc: 'Membangun model Machine Learning untuk memprediksi kualitas wine berdasarkan sifat fisikokimia, dideploy menggunakan Streamlit secara interaktif.',
     tags: ['Python', 'Machine Learning', 'Streamlit'],
     image: '/wine-preview.png',
-    previewText: 'Streamlit App UI Preview',
+    previewText: 'Pratinjau UI Aplikasi Streamlit',
     icon: Activity,
     details:
       'Proyek ini mengembangkan model Klasifikasi Machine Learning dengan Python (Scikit-Learn) untuk memprediksi kualitas anggur berdasarkan parameter fisikokimia seperti keasaman, gula, dan tingkat alkohol. Aplikasi disajikan secara interaktif menggunakan framework Streamlit dengan grafik pengamatan Feature Importance.',
   },
   {
     id: 'heart',
-    title: 'Heart Disease Risk Classification',
-    desc: 'Analyzed key contributing factors to heart disease using Tableau dashboards to support early risk identification and patient triage.',
+    title: 'Klasifikasi Risiko Penyakit Jantung',
+    desc: 'Menganalisis faktor utama penyebab penyakit jantung menggunakan dashboard Tableau untuk mendukung deteksi dini dan analisis risiko pasien.',
     tags: ['Tableau', 'Healthcare', 'Analytics'],
     image: '/tableau-preview.png',
-    previewText: 'Tableau Dashboard Preview',
+    previewText: 'Pratinjau Dashboard Tableau',
     icon: HeartPulse,
     details:
       'Analisis mendalam mengenai faktor-faktor utama penyebab penyakit jantung menggunakan visualisasi interaktif Tableau. Proyek ini memetakan korelasi antara tekanan darah, kadar kolesterol, dan usia untuk mendukung deteksi dini pada pasien.',
   },
   {
     id: 'breast',
-    title: 'Breast Cancer Risk Factor Analysis',
-    desc: 'Applied classification models on Breast Cancer data to identify significant factors associated with higher cancer risk.',
+    title: 'Analisis Faktor Risiko Kanker Payudara',
+    desc: 'Menerapkan pemodelan klasifikasi pada data Breast Cancer untuk mengidentifikasi faktor signifikan terkait risiko kanker.',
     tags: ['Python', 'EDA', 'Classification'],
     image: '/cancer-preview.png',
-    previewText: 'Feature Matrix Plot Preview',
+    previewText: 'Pratinjau Plot Matriks Fitur',
     icon: Dna,
     details:
       'Melakukan Exploratory Data Analysis (EDA) dan pemodelan klasifikasi pada dataset Breast Cancer Wisconsin. Proyek ini mengekstrak fitur paling berpengaruh dalam membedakan tumor jinak (benign) dan ganas (malignant).',
@@ -46,10 +46,10 @@ const ProjectsSlide = () => {
       {/* Header Info */}
       <div className="mb-3 sm:mb-4 max-w-full">
         <div className="inline-block bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-4 py-1.5 rounded-lg uppercase tracking-wider mb-2 shadow-md shadow-[#2DD4BF]/20">
-          Personal Projects
+          Proyek Pribadi
         </div>
         <p className="text-xs sm:text-sm text-[#A7F3D0]/90 font-light max-w-2xl">
-          A collection of independent projects showcasing my ability to apply data analytics, machine learning, and visualization tools to solve real-world problems.
+          Kumpulan proyek mandiri yang menunjukkan kemampuan saya dalam menerapkan analisis data, machine learning, dan visualisasi untuk memecahkan masalah nyata.
         </p>
       </div>
 

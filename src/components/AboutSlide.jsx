@@ -21,26 +21,26 @@ const values = [
   {
     num: '01',
     icon: Database,
-    title: 'Data-Driven Problem Solving',
-    desc: 'Translating raw data into actionable business insights.',
+    title: 'Pemecahan Masalah Berbasis Data',
+    desc: 'Mengubah data mentah menjadi insight bisnis yang dapat ditindaklanjuti.',
   },
   {
     num: '02',
     icon: Zap,
-    title: 'Adaptability',
-    desc: 'Comfortable working across academic projects & evolving requirements.',
+    title: 'Adaptabilitas',
+    desc: 'Nyaman bekerja di berbagai proyek akademik & lingkungan kerja yang terus berkembang.',
   },
   {
     num: '03',
     icon: Brain,
-    title: 'Analytical & Critical Thinking',
-    desc: 'Breaking down complex operational problems into structured solutions.',
+    title: 'Berpikir Analitis & Kritis',
+    desc: 'Memecahkan masalah operasional yang kompleks menjadi solusi yang terstruktur.',
   },
   {
     num: '04',
     icon: MessageSquareQuote,
-    title: 'Clear Communication',
-    desc: 'Presenting technical findings in a clear & compelling way.',
+    title: 'Komunikasi yang Jelas',
+    desc: 'Menyajikan temuan teknis dengan visual dan bahasa yang mudah dipahami.',
   },
 ];
 
@@ -49,7 +49,7 @@ const AboutSlide = () => {
     <div className="h-full flex flex-col justify-center relative py-4 md:py-0 overflow-y-auto sm:overflow-hidden w-full max-w-full">
       {/* Background Watermark */}
       <div className="absolute top-0 left-0 text-4xl sm:text-7xl md:text-[110px] font-black font-montserrat text-white/[0.02] tracking-wider sm:tracking-widest select-none pointer-events-none uppercase max-w-full overflow-hidden truncate">
-        ABOUT ME
+        TENTANG SAYA
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10 w-full max-w-full">
@@ -125,10 +125,10 @@ const AboutSlide = () => {
         >
           <div className="mb-2">
             <h2 className="text-2xl sm:text-3xl font-extrabold font-montserrat text-white">
-              What Makes <span className="gradient-text">Me Different</span>
+              Apa Yang <span className="gradient-text">Membuat Saya Berbeda</span>
             </h2>
             <p className="text-xs text-[#A7F3D0] font-light mt-0.5">
-              Bridging data analytics with operational impact — turning raw datasets into actionable insights.
+              Analisis data dengan dampak operasional — mengubah kumpulan data menjadi wawasan yang dapat dijadikan solusi.
             </p>
           </div>
 

@@ -40,18 +40,18 @@ const Header = ({ currentSlide, goToSlide, slides, viewMode, toggleViewMode }) =
       <div className="flex items-center gap-3">
         <button
           onClick={toggleViewMode}
-          title={viewMode === 'presentation' ? 'Switch to Fluid Scroll View' : 'Switch to 16:9 Slide View'}
+          title={viewMode === 'presentation' ? 'Beralih ke Tampilan Scroll' : 'Beralih ke Tampilan Slide 16:9'}
           className="hidden sm:flex items-center gap-2 px-3 py-1.5 text-xs rounded-lg border border-[#2DD4BF]/30 bg-[#0A1F3D]/80 text-[#2DD4BF] hover:bg-[#0F5E5E]/40 hover:border-[#2DD4BF] transition-all font-montserrat"
         >
           {viewMode === 'presentation' ? (
             <>
               <Layout className="w-3.5 h-3.5" />
-              <span>Slide Mode (16:9)</span>
+              <span>Mode Slide (16:9)</span>
             </>
           ) : (
             <>
               <Monitor className="w-3.5 h-3.5" />
-              <span>Scroll Mode</span>
+              <span>Mode Scroll</span>
             </>
           )}
         </button>

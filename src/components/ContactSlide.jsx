@@ -43,12 +43,11 @@ const ContactSlide = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#2DD4BF]/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold font-montserrat gradient-text capitalize tracking-tight">
-            let's connect
+
           </h2>
 
           <p className="text-xs sm:text-base text-gray-300 font-light leading-relaxed max-w-lg mx-auto">
-            Open to <span className="text-[#2DD4BF] font-semibold">Data Analyst</span> and{' '}
-            <span className="text-[#2DD4BF] font-semibold">Supply Chain Analyst</span> opportunities — let's turn data into meaningful insights together.
+            Open to <span className="text-[#2DD4BF] font-semibold">Data Analyst</span> opportunities — let's turn data into meaningful insights together.
           </p>
 
           {/* Interactive Contact Link Pills */}

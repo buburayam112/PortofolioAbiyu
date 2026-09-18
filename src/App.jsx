@@ -8,11 +8,11 @@ import ContactSlide from './components/ContactSlide';
 import SlideControls from './components/SlideControls';
 
 const slides = [
-  { id: 'home', title: 'Home', component: HomeSlide },
-  { id: 'about', title: 'About Me', component: AboutSlide },
-  { id: 'skills', title: 'Skills', component: SkillsSlide },
-  { id: 'projects', title: 'Projects', component: ProjectsSlide },
-  { id: 'contact', title: 'Contact', component: ContactSlide },
+  { id: 'home', title: 'Beranda', component: HomeSlide },
+  { id: 'about', title: 'Tentang Saya', component: AboutSlide },
+  { id: 'skills', title: 'Keahlian', component: SkillsSlide },
+  { id: 'projects', title: 'Proyek', component: ProjectsSlide },
+  { id: 'contact', title: 'Kontak', component: ContactSlide },
 ];
 
 function App() {

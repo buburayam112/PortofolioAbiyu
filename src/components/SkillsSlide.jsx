@@ -40,23 +40,23 @@ const SQLLogo = () => (
 const softSkills = [
   {
     icon: MessageSquare,
-    title: 'Communicative',
-    desc: 'Conveying data findings clearly to technical & non-technical teams.',
+    title: 'Komunikasi',
+    desc: 'Menyampaikan temuan data secara jelas kepada tim teknis maupun non-teknis.',
   },
   {
     icon: Puzzle,
-    title: 'Problem Solving',
-    desc: 'Tackling complex operational bottlenecks with structured data.',
+    title: 'Pemecahan Masalah',
+    desc: 'Mengatasi kendala operasional dengan pendekatan data terstruktur.',
   },
   {
     icon: Cpu,
-    title: 'Critical Thinking',
-    desc: 'Evaluating data validity and extracting underlying business patterns.',
+    title: 'Berpikir Kritis',
+    desc: 'Evaluasi validitas data dan mengekstrak pola bisnis yang relevan.',
   },
   {
     icon: RefreshCw,
-    title: 'Adaptability',
-    desc: 'Quickly learning new analytics tools, workflows, and domain logistics.',
+    title: 'Adaptabilitas',
+    desc: 'Cepat mempelajari perangkat analisis baru dan alur kerja bisnis.',
   },
 ];
 
@@ -71,21 +71,21 @@ const toolSkills = [
   {
     code: 'XL',
     name: 'Excel',
-    desc: 'Advanced Formulas, Pivot Table',
+    desc: 'Formula Lanjutan, Pivot Table & Visualisasi',
     LogoComp: ExcelLogo,
     imgPath: '/excel.png',
   },
   {
     code: 'TB',
     name: 'Tableau',
-    desc: 'Interactive Dashboards',
+    desc: 'Dashboard Interaktif',
     LogoComp: TableauLogo,
     imgPath: '/tableau.png',
   },
   {
     code: 'SQL',
     name: 'SQL',
-    desc: 'Data Extraction & Querying',
+    desc: 'Ekstraksi Data & Olah Query',
     LogoComp: SQLLogo,
     imgPath: '/sql.png',
   },
@@ -137,7 +137,7 @@ const SkillsSlide = () => {
         >
           <div>
             <div className="inline-block bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-4 py-1.5 rounded-lg uppercase tracking-wider mb-4 shadow-md shadow-[#2DD4BF]/20">
-              Skill Tools
+              Perangkat & Alat (Tools)
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-2">
               {toolSkills.map((tool) => {

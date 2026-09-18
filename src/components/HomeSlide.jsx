@@ -50,7 +50,7 @@ const HomeSlide = ({ nextSlide }) => {
         <div className="flex items-center gap-2 sm:gap-3 mb-2 max-w-full">
           <div className="h-[1px] w-4 sm:w-16 bg-gradient-to-r from-transparent to-[#2DD4BF]/60"></div>
           <h2 className="text-[10px] xs:text-xs sm:text-sm font-montserrat font-extrabold tracking-[0.2em] sm:tracking-[0.35em] text-[#A7F3D0] uppercase">
-            W E L C O M E &nbsp; T O &nbsp; M Y
+            S E L A M A T &nbsp; D A T A N G &nbsp; D I
           </h2>
           <div className="h-[1px] w-4 sm:w-16 bg-gradient-to-l from-transparent to-[#2DD4BF]/60"></div>
         </div>
@@ -78,8 +78,6 @@ const HomeSlide = ({ nextSlide }) => {
           <div className="inline-block bg-[#0A1F3D]/90 border-2 border-[#2DD4BF]/60 px-3 sm:px-8 py-1.5 sm:py-2.5 rounded-2xl shadow-xl shadow-[#2DD4BF]/10 backdrop-blur-md max-w-full">
             <p className="text-[10px] xs:text-xs sm:text-base font-montserrat font-extrabold tracking-wider sm:tracking-widest text-[#2DD4BF] uppercase flex flex-wrap items-center justify-center gap-1 sm:gap-2">
               <span>DATA ANALYST</span>
-              <span className="text-white/40">•</span>
-              <span>SUPPLY CHAIN ANALYST</span>
             </p>
           </div>
         </div>
@@ -87,7 +85,7 @@ const HomeSlide = ({ nextSlide }) => {
         {/* Author Tag Box (BY ABIYYU FARRAS) */}
         <div className="mt-3 sm:mt-6 flex items-center shadow-2xl rounded-xl overflow-hidden border-2 border-white/20 max-w-full">
           <div className="bg-[#F59E0B] text-[#050C17] font-montserrat font-black text-[10px] sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2.5 uppercase tracking-wider flex items-center gap-1">
-            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-[#050C17]" /> BY
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-[#050C17]" /> OLEH
           </div>
           <div className="bg-white text-[#050C17] font-montserrat font-extrabold text-[10px] sm:text-sm px-4 sm:px-6 py-1.5 sm:py-2.5 uppercase tracking-wider sm:tracking-widest">
             ABIYYU FARRAS
