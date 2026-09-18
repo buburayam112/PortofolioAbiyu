@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, GraduationCap, Award, MapPin, Database, Zap, Brain, MessageSquareQuote } from 'lucide-react';
+import { Mail, GraduationCap, Award, MapPin, Layers, Target, ShieldCheck, Sparkles } from 'lucide-react';
 
 const LinkedinIcon = (props) => (
   <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -20,27 +20,27 @@ const GithubIcon = (props) => (
 const values = [
   {
     num: '01',
-    icon: Database,
-    title: 'Pemecahan Masalah Berbasis Data',
-    desc: 'Mengubah data mentah menjadi insight bisnis.',
+    icon: Layers,
+    title: 'Jembatan Bisnis & Teknis',
+    desc: 'Memahami kebutuhan bisnis sekaligus mengeksekusinya secara teknis.',
   },
   {
     num: '02',
-    icon: Zap,
-    title: 'Adaptif',
-    desc: 'Selalu beradaptasi dan belajar dalam menghadapi perubahan lingkungan kerja.',
+    icon: Target,
+    title: 'Fokus Actionable Insight',
+    desc: 'Menyajikan rekomendasi nyata yang dapat dieksekusi, bukan sekadar grafik.',
   },
   {
     num: '03',
-    icon: Brain,
-    title: 'Berpikir Analitis & Kritis',
-    desc: 'Memecahkan masalah operasional menjadi solusi yang terstruktur.',
+    icon: ShieldCheck,
+    title: 'Integritas & Kualitas Data',
+    desc: 'Memastikan kebersihan dan validitas data sebelum analisis dilakukan.',
   },
   {
     num: '04',
-    icon: MessageSquareQuote,
-    title: 'Komunikasi yang Jelas',
-    desc: 'Menyajikan temuan teknis dengan visual dan bahasa yang mudah dipahami.',
+    icon: Sparkles,
+    title: 'Pembelajar Mandiri & Cepat',
+    desc: 'Antusias menguasai teknologi dan tools data terbaru secara mandiri.',
   },
 ];
 

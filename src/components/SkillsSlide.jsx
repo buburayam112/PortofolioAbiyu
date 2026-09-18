@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageSquare, Puzzle, Cpu, RefreshCw } from 'lucide-react';
+import { MessageSquare, Puzzle, Cpu, Users } from 'lucide-react';
 
 // Brand SVG Logos
 const PythonLogo = () => (
@@ -40,23 +40,23 @@ const SQLLogo = () => (
 const softSkills = [
   {
     icon: MessageSquare,
-    title: 'Komunikatif',
-    desc: 'Menyampaikan temuan data secara jelas kepada tim teknis maupun non-teknis.',
+    title: 'Data Storytelling',
+    desc: 'Menyampaikan temuan data yang rumit menjadi narasi visual yang intuitif.',
+  },
+  {
+    icon: Users,
+    title: 'Kolaborasi Lintas Tim',
+    desc: 'Berkomunikasi dan berkoordinasi secara efektif dengan tim teknis maupun non-teknis.',
   },
   {
     icon: Puzzle,
-    title: 'Problem Solver',
-    desc: 'Mengatasi kendala operasional dengan pendekatan data terstruktur.',
+    title: 'Problem Solving Terstruktur',
+    desc: 'Membedah masalah operasional menjadi langkah-langkah solusi berbasis data.',
   },
   {
     icon: Cpu,
-    title: 'Critical Thinking',
-    desc: 'Evaluasi validitas data dan mengekstrak pola bisnis yang relevan.',
-  },
-  {
-    icon: RefreshCw,
-    title: 'Adaptif',
-    desc: 'Selalu beradaptasi dan belajar dalam menghadapi perubahan lingkungan kerja.',
+    title: 'Berpikir Kritis',
+    desc: 'Mempertanyakan asumsi secara objektif dan mengevaluasi validitas sumber data.',
   },
 ];
 
