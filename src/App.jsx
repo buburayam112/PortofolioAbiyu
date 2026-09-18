@@ -40,10 +40,10 @@ function App() {
   const ActiveComponent = slides[currentSlide].component;
 
   return (
-    <div className="min-h-screen bg-[#050C17] text-white flex flex-col justify-center items-center p-0 sm:p-4 md:p-6 relative font-poppins selection:bg-[#2DD4BF] selection:text-[#050C17]">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#050C17] text-white flex flex-col justify-center items-center p-0 sm:p-4 md:p-6 relative font-poppins selection:bg-[#2DD4BF] selection:text-[#050C17]">
       {/* View Mode 1: Presentation 16:9 Frame Mode */}
       {viewMode === 'presentation' ? (
-        <div className="w-full max-w-[1280px] h-screen sm:h-[720px] bg-gradient-to-br from-[#0A1F3D] via-[#0F5E5E]/90 to-[#05192D] sm:rounded-2xl shadow-2xl shadow-black/80 border border-[#2DD4BF]/20 overflow-hidden flex flex-col relative transition-all duration-500">
+        <div className="w-full max-w-full sm:max-w-[1280px] h-[100dvh] sm:h-[720px] bg-gradient-to-br from-[#0A1F3D] via-[#0F5E5E]/90 to-[#05192D] sm:rounded-2xl shadow-2xl shadow-black/80 border-0 sm:border border-[#2DD4BF]/20 overflow-hidden flex flex-col relative transition-all duration-500">
           {/* Background Ambient Glow Decorators */}
           <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-radial from-[#2DD4BF]/15 to-transparent rounded-full pointer-events-none blur-xl"></div>
           <div className="absolute bottom-[-150px] left-[-100px] w-[500px] h-[500px] bg-radial from-[#0F5E5E]/25 to-transparent rounded-full pointer-events-none blur-xl"></div>
@@ -58,7 +58,7 @@ function App() {
           />
 
           {/* Main Slide Viewport */}
-          <main className="flex-1 relative px-6 md:px-12 pb-16 pt-2 overflow-y-auto sm:overflow-hidden z-10">
+          <main className="flex-1 relative px-3 sm:px-6 md:px-12 pb-20 sm:pb-16 pt-2 overflow-y-auto sm:overflow-hidden z-10 w-full max-w-full">
             <ActiveComponent nextSlide={nextSlide} goToSlide={goToSlide} />
           </main>
 
@@ -73,7 +73,7 @@ function App() {
         </div>
       ) : (
         /* View Mode 2: Fluid Scroll Mode */
-        <div className="w-full max-w-5xl bg-gradient-to-br from-[#0A1F3D] via-[#0F5E5E]/90 to-[#05192D] rounded-2xl border border-[#2DD4BF]/20 overflow-hidden flex flex-col relative my-4">
+        <div className="w-full max-w-full sm:max-w-5xl bg-gradient-to-br from-[#0A1F3D] via-[#0F5E5E]/90 to-[#05192D] sm:rounded-2xl border-0 sm:border border-[#2DD4BF]/20 overflow-hidden flex flex-col relative my-0 sm:my-4">
           <Header
             currentSlide={currentSlide}
             goToSlide={goToSlide}
@@ -82,11 +82,11 @@ function App() {
             toggleViewMode={toggleViewMode}
           />
 
-          <div className="p-6 sm:p-10 space-y-20">
+          <div className="p-4 sm:p-8 md:p-10 space-y-12 sm:space-y-20 w-full max-w-full">
             {slides.map((slideItem) => {
               const Comp = slideItem.component;
               return (
-                <section key={slideItem.id} id={slideItem.id} className="scroll-mt-24 border-b border-white/5 pb-12 last:border-b-0">
+                <section key={slideItem.id} id={slideItem.id} className="scroll-mt-24 border-b border-white/5 pb-8 sm:pb-12 last:border-b-0">
                   <Comp nextSlide={nextSlide} goToSlide={goToSlide} />
                 </section>
               );

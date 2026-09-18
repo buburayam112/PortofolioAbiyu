@@ -46,21 +46,21 @@ const values = [
 
 const AboutSlide = () => {
   return (
-    <div className="h-full flex flex-col justify-center relative py-4 md:py-0 overflow-y-auto sm:overflow-hidden">
+    <div className="h-full flex flex-col justify-center relative py-4 md:py-0 overflow-y-auto sm:overflow-hidden w-full max-w-full">
       {/* Background Watermark */}
-      <div className="absolute top-0 left-0 text-[80px] sm:text-[110px] font-black font-montserrat text-white/[0.02] tracking-widest select-none pointer-events-none uppercase">
+      <div className="absolute top-0 left-0 text-4xl sm:text-7xl md:text-[110px] font-black font-montserrat text-white/[0.02] tracking-wider sm:tracking-widest select-none pointer-events-none uppercase max-w-full overflow-hidden truncate">
         ABOUT ME
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10 w-full max-w-full">
         {/* Left Column: Profile Card Frame & Bio Summary */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="lg:col-span-5 space-y-4"
+          className="lg:col-span-5 space-y-4 w-full max-w-full"
         >
-          <div className="bg-gradient-to-b from-[#0F5E5E]/40 via-[#0A1F3D]/80 to-[#050C17] border-2 border-[#2DD4BF]/50 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center shadow-xl relative overflow-hidden group">
+          <div className="bg-gradient-to-b from-[#0F5E5E]/40 via-[#0A1F3D]/80 to-[#050C17] border-2 border-[#2DD4BF]/50 rounded-2xl p-4 sm:p-6 flex flex-col items-center text-center shadow-xl relative overflow-hidden group w-full max-w-full">
             {/* Avatar Photo / Circle */}
             <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-[#0F5E5E] to-[#2DD4BF] flex items-center justify-center text-white font-extrabold text-3xl shadow-xl shadow-[#2DD4BF]/30 mb-3 border-2 border-[#2DD4BF] overflow-hidden group">
               <img
@@ -76,7 +76,7 @@ const AboutSlide = () => {
 
             <h3 className="text-xl font-bold font-montserrat text-white">Abiyyu Farras</h3>
             <p className="text-xs text-[#2DD4BF] font-semibold mt-0.5 flex items-center gap-1">
-              <GraduationCap className="w-4 h-4" /> Sistem Informasi UM Pontianak
+              <GraduationCap className="w-4 h-4 shrink-0" /> Sistem Informasi UM Pontianak
             </p>
 
             <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs text-gray-300">
@@ -89,7 +89,7 @@ const AboutSlide = () => {
             </div>
 
             {/* Social Links */}
-            <div className="mt-4 flex gap-2">
+            <div className="mt-4 flex flex-wrap justify-center gap-2 max-w-full">
               <a
                 href="mailto:abiyufaras56@gmail.com"
                 className="bg-[#0F5E5E]/60 text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-[#2DD4BF]/30 hover:border-[#2DD4BF] transition-all flex items-center gap-1.5"

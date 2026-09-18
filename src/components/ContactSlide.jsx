@@ -27,46 +27,46 @@ const ContactSlide = () => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-center items-center text-center py-4 md:py-0">
+    <div className="h-full flex flex-col justify-center items-center text-center py-4 md:py-0 w-full max-w-full">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-2xl"
+        className="w-full max-w-2xl px-2 sm:px-0"
       >
         <div className="text-xs font-montserrat font-extrabold tracking-widest text-[#A7F3D0] uppercase mb-3">
           ✦ ABIYYU FARRAS ✦
         </div>
 
-        <div className="bg-[#0A1F3D]/70 border border-[#2DD4BF]/30 p-8 sm:p-12 rounded-3xl backdrop-blur-xl shadow-2xl space-y-6 relative overflow-hidden">
+        <div className="bg-[#0A1F3D]/70 border border-[#2DD4BF]/30 p-5 sm:p-8 md:p-12 rounded-3xl backdrop-blur-xl shadow-2xl space-y-4 sm:space-y-6 relative overflow-hidden w-full max-w-full">
           {/* Subtle Ambient Radial Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#2DD4BF]/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <h2 className="text-4xl sm:text-5xl font-extrabold font-montserrat gradient-text capitalize tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-extrabold font-montserrat gradient-text capitalize tracking-tight">
             let's connect
           </h2>
 
-          <p className="text-sm sm:text-base text-gray-300 font-light leading-relaxed max-w-lg mx-auto">
+          <p className="text-xs sm:text-base text-gray-300 font-light leading-relaxed max-w-lg mx-auto">
             Open to <span className="text-[#2DD4BF] font-semibold">Data Analyst</span> and{' '}
             <span className="text-[#2DD4BF] font-semibold">Supply Chain Analyst</span> opportunities — let's turn data into meaningful insights together.
           </p>
 
           {/* Interactive Contact Link Pills */}
-          <div className="flex flex-wrap justify-center gap-3.5 pt-2">
+          <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3.5 pt-2 max-w-full">
             <button
               onClick={copyEmail}
-              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-5 py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2 group cursor-pointer"
+              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2 group cursor-pointer max-w-full"
             >
               {copied ? (
                 <>
-                  <Check className="w-4 h-4 text-white" />
-                  <span>Email Tersalin!</span>
+                  <Check className="w-4 h-4 text-white shrink-0" />
+                  <span className="truncate">Email Tersalin!</span>
                 </>
               ) : (
                 <>
-                  <Mail className="w-4 h-4" />
-                  <span>abiyufaras56@gmail.com</span>
-                  <Copy className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100" />
+                  <Mail className="w-4 h-4 shrink-0" />
+                  <span className="max-w-[180px] xs:max-w-[240px] sm:max-w-none truncate">abiyufaras56@gmail.com</span>
+                  <Copy className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 shrink-0" />
                 </>
               )}
             </button>
@@ -75,20 +75,20 @@ const ContactSlide = () => {
               href="https://linkedin.com/in/abiyyu-farras-5a3a673bb"
               target="_blank"
               rel="noreferrer"
-              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-5 py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2"
+              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2 max-w-full"
             >
-              <LinkedinIcon className="w-4 h-4" />
-              <span>linkedin.com/in/abiyyu-farras-5a3a673bb</span>
+              <LinkedinIcon className="w-4 h-4 shrink-0" />
+              <span className="max-w-[180px] xs:max-w-[240px] sm:max-w-none truncate">linkedin.com/in/abiyyu-farras-5a3a673bb</span>
             </a>
 
             <a
               href="https://github.com/buburayam112"
               target="_blank"
               rel="noreferrer"
-              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-5 py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2"
+              className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white text-xs font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-lg shadow-[#2DD4BF]/20 hover:scale-105 transition-all flex items-center gap-2 max-w-full"
             >
-              <GithubIcon className="w-4 h-4" />
-              <span>github.com/buburayam112</span>
+              <GithubIcon className="w-4 h-4 shrink-0" />
+              <span className="max-w-[180px] xs:max-w-[240px] sm:max-w-none truncate">github.com/buburayam112</span>
             </a>
           </div>
         </div>

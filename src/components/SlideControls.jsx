@@ -16,7 +16,7 @@ const SlideControls = ({ currentSlide, nextSlide, prevSlide, totalSlides, goToSl
   }, [nextSlide, prevSlide]);
 
   return (
-    <div className="absolute bottom-5 right-6 md:right-12 z-30 flex items-center gap-4">
+    <div className="absolute bottom-3 right-4 sm:bottom-5 sm:right-6 md:right-12 z-30 flex items-center gap-2 sm:gap-4">
       {/* Slide Indicator Dots */}
       <div className="hidden sm:flex items-center gap-2 bg-[#0A1F3D]/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
         {Array.from({ length: totalSlides }).map((_, idx) => (
@@ -37,17 +37,17 @@ const SlideControls = ({ currentSlide, nextSlide, prevSlide, totalSlides, goToSl
       <div className="flex items-center gap-2">
         <button
           onClick={prevSlide}
-          className="w-9 h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
+          className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
           aria-label="Previous Slide"
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="w-9 h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
+          className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#0A1F3D]/90 border border-[#2DD4BF] text-[#2DD4BF] hover:bg-[#2DD4BF] hover:text-[#050C17] flex items-center justify-center transition-all duration-300 shadow-lg active:scale-95"
           aria-label="Next Slide"
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
     </div>

@@ -10,10 +10,10 @@ const Header = ({ currentSlide, goToSlide, slides, viewMode, toggleViewMode }) =
   };
 
   return (
-    <header className="flex justify-between items-center px-6 md:px-12 py-5 z-20 relative border-b border-teal-500/10 backdrop-blur-md bg-[#0A1F3D]/40">
+    <header className="flex justify-between items-center px-4 sm:px-6 md:px-12 py-3.5 sm:py-5 z-20 relative border-b border-teal-500/10 backdrop-blur-md bg-[#0A1F3D]/40 w-full max-w-full">
       {/* Brand Badge */}
       <div className="flex items-center gap-3">
-        <div className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] px-4 py-1.5 rounded-full text-xs font-montserrat font-extrabold tracking-wider uppercase text-white shadow-lg shadow-[#2DD4BF]/20 flex items-center gap-2">
+        <div className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-montserrat font-extrabold tracking-wider uppercase text-white shadow-lg shadow-[#2DD4BF]/20 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
           Portofolio 2026
         </div>

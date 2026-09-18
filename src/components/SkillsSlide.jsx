@@ -93,8 +93,8 @@ const toolSkills = [
 
 const SkillsSlide = () => {
   return (
-    <div className="h-full flex flex-col justify-center py-4 md:py-0">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+    <div className="h-full flex flex-col justify-center py-4 md:py-0 w-full max-w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-full">
         {/* Soft Skills Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
