@@ -22,19 +22,19 @@ const values = [
     num: '01',
     icon: Database,
     title: 'Pemecahan Masalah Berbasis Data',
-    desc: 'Mengubah data mentah menjadi insight bisnis yang dapat ditindaklanjuti.',
+    desc: 'Mengubah data mentah menjadi insight bisnis.',
   },
   {
     num: '02',
     icon: Zap,
-    title: 'Adaptabilitas',
-    desc: 'Nyaman bekerja di berbagai proyek akademik & lingkungan kerja yang terus berkembang.',
+    title: 'Adaptif',
+    desc: 'Selalu beradaptasi dan belajar dalam menghadapi perubahan lingkungan kerja.',
   },
   {
     num: '03',
     icon: Brain,
     title: 'Berpikir Analitis & Kritis',
-    desc: 'Memecahkan masalah operasional yang kompleks menjadi solusi yang terstruktur.',
+    desc: 'Memecahkan masalah operasional menjadi solusi yang terstruktur.',
   },
   {
     num: '04',
@@ -128,7 +128,7 @@ const AboutSlide = () => {
               Apa Yang <span className="gradient-text">Membuat Saya Berbeda</span>
             </h2>
             <p className="text-xs text-[#A7F3D0] font-light mt-0.5">
-              Analisis data dengan dampak operasional — mengubah kumpulan data menjadi wawasan yang dapat dijadikan solusi.
+              Analisis data — mengubah kumpulan data menjadi insight bisnis yang dapat dijadikan solusi.
             </p>
           </div>
 
