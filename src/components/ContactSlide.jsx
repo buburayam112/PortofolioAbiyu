@@ -27,12 +27,12 @@ const ContactSlide = () => {
   };
 
   return (
-    <div className="min-h-full flex flex-col justify-start sm:justify-center items-center text-center py-4 sm:py-0 w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-center items-center text-center py-4 sm:py-0 w-full max-w-full my-auto">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-2xl px-2 sm:px-0"
+        className="w-full max-w-2xl px-2 sm:px-0 my-auto"
       >
         <div className="text-xs font-montserrat font-extrabold tracking-widest text-[#A7F3D0] uppercase mb-3">
           ✦ ABIYYU FARRAS ✦

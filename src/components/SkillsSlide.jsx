@@ -93,7 +93,7 @@ const toolSkills = [
 
 const SkillsSlide = () => {
   return (
-    <div className="min-h-full flex flex-col justify-start sm:justify-center py-2 sm:py-0 w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-center py-2 sm:py-0 w-full max-w-full my-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-full">
         {/* Soft Skills Section */}
         <motion.div

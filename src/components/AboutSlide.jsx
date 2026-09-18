@@ -46,7 +46,7 @@ const values = [
 
 const AboutSlide = () => {
   return (
-    <div className="min-h-full flex flex-col justify-start sm:justify-center relative py-2 sm:py-0 w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-center relative py-2 sm:py-0 w-full max-w-full my-auto">
       {/* Background Watermark */}
       <div className="absolute top-0 left-0 text-4xl sm:text-7xl md:text-[110px] font-black font-montserrat text-white/[0.02] tracking-wider sm:tracking-widest select-none pointer-events-none uppercase max-w-full overflow-hidden truncate">
         TENTANG SAYA

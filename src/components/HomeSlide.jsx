@@ -4,7 +4,7 @@ import { Settings, BarChart2, PieChart, TrendingUp, Cloud, X, ChevronRight, Spar
 
 const HomeSlide = ({ nextSlide }) => {
   return (
-    <div className="min-h-full flex flex-col justify-start sm:justify-center items-center text-center relative py-4 sm:py-0 w-full max-w-full">
+    <div className="min-h-full flex flex-col justify-center items-center text-center relative py-4 sm:py-0 w-full max-w-full my-auto">
       {/* Floating Graphic Doodles & Decorative Icons */}
       <motion.div
         animate={{ y: [-6, 6, -6] }}
@@ -44,7 +44,7 @@ const HomeSlide = ({ nextSlide }) => {
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="z-10 max-w-4xl w-full flex flex-col items-center px-2 sm:px-4"
+        className="z-10 max-w-4xl w-full flex flex-col items-center px-2 sm:px-4 my-auto"
       >
         {/* Top Header Text */}
         <div className="flex items-center gap-2 sm:gap-3 mb-2 max-w-full">
