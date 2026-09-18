@@ -5,58 +5,58 @@ import { MessageSquare, Puzzle, Cpu, RefreshCw } from 'lucide-react';
 // Brand SVG Logos
 const PythonLogo = () => (
   <svg viewBox="0 0 128 128" className="w-6 h-6">
-    <path fill="#3776AB" d="M63.3 15.5c-24.8 0-23.3 10.7-23.3 10.7l.1 11.1h23.7v3.3H30.4S15.6 38.9 15.6 63.8s12.9 24.3 12.9 24.3h7.7V77.3s-.4-12.9 12.9-12.9h22.2s12.4.2 12.4-12.4V27.9s1.8-12.4-22.7-12.4zm-12.3 7.6a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4z"/>
-    <path fill="#FFD43B" d="M64.7 112.5c24.8 0 23.3-10.7 23.3-10.7l-.1-11.1H64.2v-3.3h33.4s14.8 1.7 14.8-23.2S99.5 39.9 99.5 39.9h-7.7v10.8s.4 12.9-12.9 12.9H56.7s-12.4-.2-12.4 12.4v24.1s-1.8 12.4 22.7 12.4zm12.3-7.6a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z"/>
+    <path fill="#3776AB" d="M63.3 15.5c-24.8 0-23.3 10.7-23.3 10.7l.1 11.1h23.7v3.3H30.4S15.6 38.9 15.6 63.8s12.9 24.3 12.9 24.3h7.7V77.3s-.4-12.9 12.9-12.9h22.2s12.4.2 12.4-12.4V27.9s1.8-12.4-22.7-12.4zm-12.3 7.6a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4z" />
+    <path fill="#FFD43B" d="M64.7 112.5c24.8 0 23.3-10.7 23.3-10.7l-.1-11.1H64.2v-3.3h33.4s14.8 1.7 14.8-23.2S99.5 39.9 99.5 39.9h-7.7v10.8s.4 12.9-12.9 12.9H56.7s-12.4-.2-12.4 12.4v24.1s-1.8 12.4 22.7 12.4zm12.3-7.6a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z" />
   </svg>
 );
 
 const ExcelLogo = () => (
   <svg viewBox="0 0 128 128" className="w-6 h-6">
-    <path fill="#107C41" d="M74.8 16L16 26.3v75.4L74.8 112z"/>
-    <path fill="#1D6F42" d="M74.8 16h37.2v96H74.8z"/>
-    <path fill="#FFF" d="M37.2 46.2h10.8l7.2 14.5 7.4-14.5h10.3L61.7 63.6l11.7 18.2H62.6l-7.9-15.6-8.1 15.6H36l12.1-18.4z"/>
+    <path fill="#107C41" d="M74.8 16L16 26.3v75.4L74.8 112z" />
+    <path fill="#1D6F42" d="M74.8 16h37.2v96H74.8z" />
+    <path fill="#FFF" d="M37.2 46.2h10.8l7.2 14.5 7.4-14.5h10.3L61.7 63.6l11.7 18.2H62.6l-7.9-15.6-8.1 15.6H36l12.1-18.4z" />
   </svg>
 );
 
 const TableauLogo = () => (
   <svg viewBox="0 0 128 128" className="w-6 h-6">
     <g transform="scale(0.8) translate(16, 16)">
-      <path fill="#E8762D" d="M61 14h6v18h-6zM32 43h6v18h-6zM90 43h6v18h-6zM61 72h6v18h-6z"/>
-      <path fill="#E15759" d="M55 20h18v6H55zM26 49h18v6H26zM84 49h18v6H84zM55 78h18v6H55z"/>
-      <path fill="#76B7B2" d="M61 43h6v18h-6z"/>
-      <path fill="#59A14F" d="M55 49h18v6H55z"/>
-      <path fill="#EDC948" d="M46 64h6v12h-6zM76 64h6v12h-6z"/>
-      <path fill="#B07AA1" d="M43 67h12v6H43zM73 67h12v6H73z"/>
+      <path fill="#E8762D" d="M61 14h6v18h-6zM32 43h6v18h-6zM90 43h6v18h-6zM61 72h6v18h-6z" />
+      <path fill="#E15759" d="M55 20h18v6H55zM26 49h18v6H26zM84 49h18v6H84zM55 78h18v6H55z" />
+      <path fill="#76B7B2" d="M61 43h6v18h-6z" />
+      <path fill="#59A14F" d="M55 49h18v6H55z" />
+      <path fill="#EDC948" d="M46 64h6v12h-6zM76 64h6v12h-6z" />
+      <path fill="#B07AA1" d="M43 67h12v6H43zM73 67h12v6H73z" />
     </g>
   </svg>
 );
 
 const SQLLogo = () => (
   <svg viewBox="0 0 128 128" className="w-6 h-6">
-    <path fill="#336791" d="M64 16c-26.5 0-48 9-48 20v56c0 11 21.5 20 48 20s48-9 48-20V36c0-11-21.5-20-48-20zm0 10c22 0 38 6.7 38 10s-16 10-38 10-38-6.7-38-10 16-10 38-10zm38 66c0 3.3-16 10-38 10s-38-6.7-38-10V70c8.8 6 22.8 9 38 9s29.2-3 38-9v22zm0-24c0 3.3-16 10-38 10s-38-6.7-38-10V46c8.8 6 22.8 9 38 9s29.2-3 38-9v22z"/>
+    <path fill="#336791" d="M64 16c-26.5 0-48 9-48 20v56c0 11 21.5 20 48 20s48-9 48-20V36c0-11-21.5-20-48-20zm0 10c22 0 38 6.7 38 10s-16 10-38 10-38-6.7-38-10 16-10 38-10zm38 66c0 3.3-16 10-38 10s-38-6.7-38-10V70c8.8 6 22.8 9 38 9s29.2-3 38-9v22zm0-24c0 3.3-16 10-38 10s-38-6.7-38-10V46c8.8 6 22.8 9 38 9s29.2-3 38-9v22z" />
   </svg>
 );
 
 const softSkills = [
   {
     icon: MessageSquare,
-    title: 'Komunikasi',
+    title: 'Komunikatif',
     desc: 'Menyampaikan temuan data secara jelas kepada tim teknis maupun non-teknis.',
   },
   {
     icon: Puzzle,
-    title: 'Pemecahan Masalah',
+    title: 'Problem Solver',
     desc: 'Mengatasi kendala operasional dengan pendekatan data terstruktur.',
   },
   {
     icon: Cpu,
-    title: 'Berpikir Kritis',
+    title: 'Critical Thinking',
     desc: 'Evaluasi validitas data dan mengekstrak pola bisnis yang relevan.',
   },
   {
     icon: RefreshCw,
-    title: 'Adaptabilitas',
-    desc: 'Cepat mempelajari perangkat analisis baru dan alur kerja bisnis.',
+    title: 'Adaptif',
+    desc: 'Selalu beradaptasi dan belajar dalam menghadapi perubahan lingkungan kerja.',
   },
 ];
 
