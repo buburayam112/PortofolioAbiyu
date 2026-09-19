@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageSquare, Puzzle, Cpu, Users } from 'lucide-react';
+import { Database, LineChart, Wrench, CheckCircle2, Layers, Cpu, Code2, BarChart2 } from 'lucide-react';
 
 // Brand SVG Logos
 const PythonLogo = () => (
@@ -37,136 +37,108 @@ const SQLLogo = () => (
   </svg>
 );
 
-const softSkills = [
-  {
-    icon: MessageSquare,
-    title: 'Data Storytelling',
-    desc: 'Menyampaikan temuan data yang rumit menjadi narasi visual yang intuitif.',
-  },
-  {
-    icon: Users,
-    title: 'Kolaborasi Lintas Tim',
-    desc: 'Berkomunikasi dan berkoordinasi secara efektif dengan tim teknis maupun non-teknis.',
-  },
-  {
-    icon: Puzzle,
-    title: 'Problem Solving Terstruktur',
-    desc: 'Membedah masalah operasional menjadi langkah-langkah solusi berbasis data.',
-  },
-  {
-    icon: Cpu,
-    title: 'Berpikir Kritis',
-    desc: 'Mempertanyakan asumsi secara objektif dan mengevaluasi validitas sumber data.',
-  },
-];
-
+// Tools Data & Detailed Usage in Projects
 const toolSkills = [
   {
-    code: 'PY',
     name: 'Python',
-    desc: 'Pandas, Scikit-Learn, Streamlit',
+    subtitle: 'Pandas, NumPy, Matplotlib, Scikit-Learn',
+    useCase: 'Data Cleaning & Preprocessing, EDA, Pemodelan ML & Automasi Analisis',
     LogoComp: PythonLogo,
     imgPath: '/python.png',
   },
   {
-    code: 'XL',
-    name: 'Excel',
-    desc: 'Formula Lanjutan, Pivot Table & Visualisasi',
+    name: 'Microsoft Excel',
+    subtitle: 'Pivot Table, Lookup, Power Query',
+    useCase: 'Pembersihan Data Cepat, Formulir Lanjutan, Pivot Table & Quick Reporting',
     LogoComp: ExcelLogo,
     imgPath: '/excel.png',
   },
   {
-    code: 'TB',
-    name: 'Tableau',
-    desc: 'Dashboard Interaktif',
-    LogoComp: TableauLogo,
-    imgPath: '/tableau.png',
-  },
-  {
-    code: 'SQL',
-    name: 'SQL',
-    desc: 'Ekstraksi Data & Olah Query',
+    name: 'SQL (MySQL / PostgreSQL)',
+    subtitle: 'JOIN, Aggregation, Subquery, Window Functions',
+    useCase: 'Ekstraksi & Querying Database Relasional, Agregasi & Manipulasi Data',
     LogoComp: SQLLogo,
     imgPath: '/sql.png',
   },
+  {
+    name: 'Tableau & Power BI',
+    subtitle: 'Data Modeling, DAX, Interactive Dashboard',
+    useCase: 'Pengembangan Dashboard BI Interaktif & Penyampaian Visual Data Storytelling',
+    LogoComp: TableauLogo,
+    imgPath: '/tableau.png',
+  },
+];
+
+// Technical Process Skills Reference
+const technicalSkills = [
+  'Data Cleaning & Data Preprocessing',
+  'Data Analysis & Exploratory Data Analysis (EDA)',
+  'Data Visualization & Dashboard Development',
+  'SQL Query (JOIN, Aggregation, Subquery)',
+  'Data Transformation & Data Modeling',
+  'Basic Statistical Analysis & Reporting',
 ];
 
 const SkillsSlide = () => {
   return (
     <div className="min-h-full flex flex-col justify-center py-2 sm:py-0 w-full max-w-full my-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-full">
-        {/* Soft Skills Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 w-full max-w-full items-stretch">
+        
+        {/* Left Section: Perangkat & Tools (8 Cols) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#0A1F3D]/60 border border-[#2DD4BF]/20 rounded-2xl p-5 sm:p-6 backdrop-blur-md flex flex-col justify-between"
+          className="lg:col-span-7 bg-[#0A1F3D]/60 border border-[#2DD4BF]/20 rounded-2xl p-4 sm:p-5 backdrop-blur-md flex flex-col justify-between"
         >
           <div>
-            <div className="inline-block bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-4 py-1.5 rounded-lg uppercase tracking-wider mb-4 shadow-md shadow-[#2DD4BF]/20">
-              Soft Skills
+            <div className="flex items-center gap-2 mb-3">
+              <span className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-3.5 py-1 rounded-lg uppercase tracking-wider shadow-md shadow-[#2DD4BF]/20 flex items-center gap-1.5">
+                <Wrench className="w-3.5 h-3.5" /> Tools & Perangkat Proyek
+              </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
-              {softSkills.map((skill) => {
-                const IconComp = skill.icon;
-                return (
-                  <div
-                    key={skill.title}
-                    className="bg-[#0F5E5E]/20 border border-[#2DD4BF]/20 hover:border-[#2DD4BF]/50 p-3.5 rounded-xl transition-all duration-300 group"
-                  >
-                    <h4 className="text-xs font-semibold text-[#2DD4BF] flex items-center gap-2 mb-1 group-hover:translate-x-1 transition-transform">
-                      <IconComp className="w-4 h-4 text-[#2DD4BF]" />
-                      {skill.title}
-                    </h4>
-                    <p className="text-[11px] text-[#A7F3D0]/90 leading-normal font-light">
-                      {skill.desc}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </motion.div>
 
-        {/* Technical Tools Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-[#0A1F3D]/60 border border-[#2DD4BF]/20 rounded-2xl p-5 sm:p-6 backdrop-blur-md flex flex-col justify-between"
-        >
-          <div>
-            <div className="inline-block bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-4 py-1.5 rounded-lg uppercase tracking-wider mb-4 shadow-md shadow-[#2DD4BF]/20">
-              Perangkat & Alat (Tools)
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
               {toolSkills.map((tool) => {
                 const LogoSvg = tool.LogoComp;
                 return (
                   <div
                     key={tool.name}
-                    className="bg-[#0F5E5E]/30 border border-[#2DD4BF]/30 hover:border-[#2DD4BF] p-4 rounded-xl flex items-center gap-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-[#2DD4BF]/10 group"
+                    className="bg-[#0F5E5E]/20 border border-[#2DD4BF]/25 hover:border-[#2DD4BF]/60 p-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-[#2DD4BF]/10 group flex flex-col justify-between"
                   >
-                    {/* Tool Logo Container with SVG + Image Fallback */}
-                    <div className="w-12 h-12 bg-[#050C17]/80 border border-[#2DD4BF]/40 rounded-xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden relative group-hover:border-[#2DD4BF] group-hover:scale-105 transition-all">
-                      <img
-                        src={tool.imgPath}
-                        alt={tool.name}
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                        className="w-7 h-7 object-contain absolute"
-                      />
-                      <LogoSvg />
-                    </div>
-
                     <div>
-                      <h4 className="text-sm font-bold text-white group-hover:text-[#2DD4BF] transition-colors">
-                        {tool.name}
-                      </h4>
-                      <p className="text-[11px] text-[#A7F3D0]/90 font-light mt-0.5">
-                        {tool.desc}
-                      </p>
+                      <div className="flex items-center gap-3 mb-2">
+                        {/* Tool Logo Container */}
+                        <div className="w-9 h-9 bg-[#050C17]/90 border border-[#2DD4BF]/40 rounded-lg flex items-center justify-center shrink-0 shadow-inner overflow-hidden relative group-hover:border-[#2DD4BF] group-hover:scale-105 transition-all">
+                          <img
+                            src={tool.imgPath}
+                            alt={tool.name}
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                            className="w-5 h-5 object-contain absolute"
+                          />
+                          <LogoSvg />
+                        </div>
+
+                        <div>
+                          <h4 className="text-xs font-bold text-white group-hover:text-[#2DD4BF] transition-colors leading-tight">
+                            {tool.name}
+                          </h4>
+                          <p className="text-[10px] text-[#2DD4BF]/90 font-medium">
+                            {tool.subtitle}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-[#050C17]/50 rounded-lg p-2 border border-white/5">
+                        <span className="text-[10px] font-semibold text-[#2DD4BF] uppercase block tracking-wider mb-0.5">
+                          Penggunaan dalam Proyek:
+                        </span>
+                        <p className="text-[11px] text-[#A7F3D0]/90 leading-snug font-light">
+                          {tool.useCase}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 );
@@ -174,6 +146,41 @@ const SkillsSlide = () => {
             </div>
           </div>
         </motion.div>
+
+        {/* Right Section: Technical Skill Set & Capabilities (5 Cols) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="lg:col-span-5 bg-[#0A1F3D]/60 border border-[#2DD4BF]/20 rounded-2xl p-4 sm:p-5 backdrop-blur-md flex flex-col justify-between"
+        >
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="bg-gradient-to-r from-[#0F5E5E] to-[#2DD4BF] text-white font-montserrat font-extrabold text-xs px-3.5 py-1 rounded-lg uppercase tracking-wider shadow-md shadow-[#2DD4BF]/20 flex items-center gap-1.5">
+                <BarChart2 className="w-3.5 h-3.5" /> Technical Skills & Workflow
+              </span>
+            </div>
+
+            <p className="text-[11px] text-[#A7F3D0]/80 font-light mb-3">
+              Kemampuan teknis dasar yang saya terapkan dalam setiap pengerjaan olah data:
+            </p>
+
+            <div className="space-y-2">
+              {technicalSkills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="bg-[#0F5E5E]/20 border border-[#2DD4BF]/20 hover:border-[#2DD4BF]/50 p-2.5 rounded-lg flex items-center gap-2.5 transition-all duration-300 group"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-[#2DD4BF] shrink-0 group-hover:scale-110 transition-transform" />
+                  <span className="text-xs font-semibold text-gray-200 group-hover:text-white transition-colors">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </div>
   );

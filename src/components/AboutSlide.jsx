@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, GraduationCap, Award, MapPin, Layers, Target, ShieldCheck, Sparkles } from 'lucide-react';
+import { Mail, GraduationCap, Award, MapPin, MessageSquare, Puzzle, Users, Cpu } from 'lucide-react';
 
 const LinkedinIcon = (props) => (
   <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -17,30 +17,30 @@ const GithubIcon = (props) => (
   </svg>
 );
 
-const values = [
+const softSkills = [
   {
     num: '01',
-    icon: Layers,
-    title: 'Jembatan Bisnis & Teknis',
-    desc: 'Memahami kebutuhan bisnis sekaligus mengeksekusinya secara teknis.',
+    icon: MessageSquare,
+    title: 'Data Storytelling',
+    desc: 'Menyampaikan temuan data yang rumit menjadi narasi visual yang intuitif bagi pemangku kepentingan.',
   },
   {
     num: '02',
-    icon: Target,
-    title: 'Fokus Actionable Insight',
-    desc: 'Menyajikan rekomendasi nyata yang dapat dieksekusi, bukan sekadar grafik.',
+    icon: Puzzle,
+    title: 'Problem Solving Terstruktur',
+    desc: 'Membedah masalah operasional bisnis menjadi langkah-langkah solusi berbasis data.',
   },
   {
     num: '03',
-    icon: ShieldCheck,
-    title: 'Integritas & Kualitas Data',
-    desc: 'Memastikan kebersihan dan validitas data sebelum analisis dilakukan.',
+    icon: Users,
+    title: 'Jembatan Bisnis & Teknis',
+    desc: 'Memahami kebutuhan bisnis secara mendalam sekaligus mampu mengeksekusinya secara teknis.',
   },
   {
     num: '04',
-    icon: Sparkles,
-    title: 'Pembelajar Mandiri & Cepat',
-    desc: 'Antusias menguasai teknologi dan tools data terbaru secara mandiri.',
+    icon: Cpu,
+    title: 'Berpikir Kritis & Pembelajar Cepat',
+    desc: 'Mengevaluasi validitas sumber data secara objektif dan adaptif menguasai teknologi baru.',
   },
 ];
 
@@ -116,7 +116,7 @@ const AboutSlide = () => {
           </div>
         </motion.div>
 
-        {/* Right Column: What Makes Me Different (4 Cards) */}
+        {/* Right Column: Soft Skills & What Makes Me Different (4 Cards) */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -125,16 +125,16 @@ const AboutSlide = () => {
         >
           <div className="mb-2">
             <h2 className="text-2xl sm:text-3xl font-extrabold font-montserrat text-white">
-              Apa Yang <span className="gradient-text">Membuat Saya Berbeda</span>
+              Soft Skills & <span className="gradient-text">Nilai Tambah</span>
             </h2>
             <p className="text-xs text-[#A7F3D0] font-light mt-0.5">
-              Analisis data — mengubah kumpulan data menjadi insight bisnis yang dapat dijadikan solusi.
+              Keahlian non-teknis yang memperkuat kemampuan analisis data dan eksekusi proyek secara efektif.
             </p>
           </div>
 
-          {/* 4 Value Cards Grid */}
+          {/* 4 Soft Skill Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {values.map((item) => {
+            {softSkills.map((item) => {
               const IconComp = item.icon;
               return (
                 <div
