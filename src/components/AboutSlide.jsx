@@ -33,14 +33,14 @@ const softSkills = [
   {
     num: '03',
     icon: Users,
-    title: 'Jembatan Bisnis & Teknis',
+    title: 'Jembatan Antar Bisnis & Teknis',
     desc: 'Memahami kebutuhan bisnis secara mendalam sekaligus mampu mengeksekusinya secara teknis.',
   },
   {
     num: '04',
     icon: Cpu,
-    title: 'Berpikir Kritis & Pembelajar Cepat',
-    desc: 'Mengevaluasi validitas sumber data secara objektif dan adaptif menguasai teknologi baru.',
+    title: 'Berpikir Kritis & Adaptif',
+    desc: 'Mengevaluasi sumber data secara objektif dan adaptif menguasai teknologi baru.',
   },
 ];
 
@@ -125,10 +125,10 @@ const AboutSlide = () => {
         >
           <div className="mb-2">
             <h2 className="text-2xl sm:text-3xl font-extrabold font-montserrat text-white">
-              Soft Skills & <span className="gradient-text">Nilai Tambah</span>
+              Soft Skills
             </h2>
             <p className="text-xs text-[#A7F3D0] font-light mt-0.5">
-              Keahlian non-teknis yang memperkuat kemampuan analisis data dan eksekusi proyek secara efektif.
+              Keahlian non-teknis yang memperkuat kemampuan analisis data dan eksekusi proyek secara efisien.
             </p>
           </div>
 
