@@ -41,28 +41,28 @@ const SQLLogo = () => (
 const toolSkills = [
   {
     name: 'Python',
-    subtitle: 'Pandas, NumPy, Matplotlib, Scikit-Learn',
+    subtitle: 'Pandas, NumPy, Matplotlib, Scikit-Learn, PyTorch',
     useCase: 'Data Cleaning & Preprocessing, EDA, Pemodelan ML & Automasi Analisis',
     LogoComp: PythonLogo,
     imgPath: '/python.png',
   },
   {
     name: 'Microsoft Excel',
-    subtitle: 'Pivot Table, Lookup, Power Query',
+    subtitle: 'Pivot Table, Lookup',
     useCase: 'Pembersihan Data Cepat, Formulir Lanjutan, Pivot Table & Quick Reporting',
     LogoComp: ExcelLogo,
     imgPath: '/excel.png',
   },
   {
     name: 'SQL (MySQL / PostgreSQL)',
-    subtitle: 'JOIN, Aggregation, Subquery, Window Functions',
+    subtitle: 'JOIN, Aggregation',
     useCase: 'Ekstraksi & Querying Database Relasional, Agregasi & Manipulasi Data',
     LogoComp: SQLLogo,
     imgPath: '/sql.png',
   },
   {
     name: 'Tableau & Power BI',
-    subtitle: 'Data Modeling, DAX, Interactive Dashboard',
+    subtitle: 'Data Modeling, Interactive Dashboard',
     useCase: 'Pengembangan Dashboard BI Interaktif & Penyampaian Visual Data Storytelling',
     LogoComp: TableauLogo,
     imgPath: '/tableau.png',
@@ -74,7 +74,7 @@ const technicalSkills = [
   'Data Cleaning & Data Preprocessing',
   'Data Analysis & Exploratory Data Analysis (EDA)',
   'Data Visualization & Dashboard Development',
-  'SQL Query (JOIN, Aggregation, Subquery)',
+  'SQL Query (JOIN, Aggregation)',
   'Data Transformation & Data Modeling',
   'Basic Statistical Analysis & Reporting',
 ];
@@ -83,7 +83,7 @@ const SkillsSlide = () => {
   return (
     <div className="min-h-full flex flex-col justify-center py-2 sm:py-0 w-full max-w-full my-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 w-full max-w-full items-stretch">
-        
+
         {/* Left Section: Perangkat & Tools (8 Cols) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -132,9 +132,6 @@ const SkillsSlide = () => {
                       </div>
 
                       <div className="bg-[#050C17]/50 rounded-lg p-2 border border-white/5">
-                        <span className="text-[10px] font-semibold text-[#2DD4BF] uppercase block tracking-wider mb-0.5">
-                          Penggunaan dalam Proyek:
-                        </span>
                         <p className="text-[11px] text-[#A7F3D0]/90 leading-snug font-light">
                           {tool.useCase}
                         </p>
